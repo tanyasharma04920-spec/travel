@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerfectAutoCover</title>
+
+    <!-- Bootstrap 4 CSS -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <script id="LeadiDscript" type="text/javascript">
+      (function () {
+        var s = document.createElement("script");
+        s.id = "LeadiDscript_campaign";
+        s.type = "text/javascript";
+        s.async = false;
+        s.src =
+          "https://create.lidstatic.com/campaign/c33d32ec-832d-aec5-cdf2-4a886435bfe1.js?snippet_version=2";
+        var LeadiDscript = document.getElementById("LeadiDscript");
+        LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+      })();
+    </script>
+    <noscript
+      ><img
+        src="https://create.leadid.com/noscript.gif?lac=D504499A-5F80-15CE-16A4-5C7C3C124BCF&lck=c33d32ec-832d-aec5-cdf2-4a886435bfe1&snippet_version=2"
+    /></noscript>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero {
+            background: url('./auto.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .features .feature-icon {
+            font-size: 40px;
+            color: #FF5733;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .contact-form button {
+            background-color: #FF5733;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background-color: #FF3E1A;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .testimonial-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            color: #555;
+        }
+         .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            padding: 10px 15px;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #FF5733;
+        }
+
+        .nav-btn {
+            background-color: #FF5733;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        .nav-btn:hover {
+            background-color: #FF3E1A;
+        }
+
+        .pricing-item {
+            background-color: #FFF3E2;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-item h3 {
+            color: #FF5733;
+        }
+
+        .pricing-item .price {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background-color: #FF5733;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .cta-section a {
+            background-color: white;
+            color: #FF5733;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .cta-section a:hover {
+            background-color: #FF3E1A;
+            color: white;
+        }
+
+        .social-icons a {
+            font-size: 25px;
+            color: #FF5733;
+            margin: 0 10px;
+        }
+
+        .social-icons a:hover {
+            color: #FF3E1A;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">PerfectAutoCover</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:+16098765431" class="btn btn-primary nav-btn">Call Us</a>
+                </li>
+                <!-- Social Media Icons -->
+                <li class="nav-item ml-3">
+                    <a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div>
+        <h1>Protect Your Car. Protect Your Future.</h1>
+        <p>Get reliable auto insurance coverage that fits your needs.</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-4">Get a Quote</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="section bg-light" id="about">
+    <div class="container text-center">
+        <h2 class="mb-4">Why Choose Us?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4>Comprehensive Coverage</h4>
+                <p>We provide complete protection for your car and your loved ones on the road.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h4>Affordable Rates</h4>
+                <p>Our competitive pricing ensures you get the best value for your auto insurance.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h4>Excellent Customer Service</h4>
+                <p>Our dedicated team is here to help with claims, questions, and more!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section bg-light" id="Testimonials">
+    <div class="container text-center">
+        <h2 class="mb-4">What Our Clients Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"I had an accident and the insurance process was quick and hassle-free. Highly recommend this service!"</p>
+                    <h5>- Sarah W.</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"Great customer service and affordable rates. They helped me get back on the road in no time."</p>
+                    <h5>- John D.</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"The online quote process was so easy. I’m happy with my coverage and the support team."</p>
+                    <h5>- Emma L.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FAQ Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>How do I file a claim?</h5>
+                <p>Filing a claim is easy. Just contact our customer support or submit a claim through our website.</p>
+            </div>
+            <div class="col-md-6">
+                <h5>What is covered under my policy?</h5>
+                <p>Our policies cover accidents, theft, vandalism, and more. Check our plan details for complete coverage.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <h2>Ready to Protect Your Car?</h2>
+    <p>Get a quote today and drive with peace of mind!</p>
+    <a href="#contact">Get a Quote</a>
+</section>
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section class="section" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Get Your Auto Insurance Quote</h2>
+        <p class="text-center mb-4">Fill out the form below to receive your personalized quote.</p>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="contact-form">
+                    <form method="POST"
+            autocomplete="off"
+            name="google-sheet"
+            onsubmit="other()">
+                        <!-- Personal Information -->
+                         <input
+              id="leadid_token"
+              name="universal_leadid"
+              type="hidden"
+              value=""
+            />
+                        <h4>Personal Information</h4>
+                        <div class="form-group">
+                            <input
+                    type="text"
+                    name="fname"
+                    class="form-control"
+                    placeholder="first name"
+                    class="form-control"
+                    required
+                  />
+                        </div>
+                        <div class="form-group">
+                            <input
+                    type="text"
+                    name="lname"
+                    class="form-control"
+                    placeholder="Last name"
+                    required
+                  />                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Your Phone Number" required>
+                        </div>
+
+                        <!-- Vehicle Information -->
+                        <h4 class="mt-4">Vehicle Information</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Car Make (e.g., Toyota)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Car Model (e.g., Corolla)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Year of Manufacture (e.g., 2020)" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="" disabled selected>Vehicle Type</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Truck">Truck</option>
+                                <option value="Convertible">Convertible</option>
+                                <option value="Coupe">Coupe</option>
+                            </select>
+                        </div>
+
+                        <!-- Insurance Details -->
+                        <h4 class="mt-4">Insurance Details</h4>
+                        <div class="form-group">
+                            <label for="coverageType">Coverage Type</label>
+                            <select id="coverageType" class="form-control" required>
+                                <option value="" disabled selected>Select Coverage Type</option>
+                                <option value="Comprehensive">Comprehensive</option>
+                                <option value="Third-Party">Third-Party</option>
+                                <option value="Liability">Liability</option>
+                                <option value="Collision">Collision</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="drivingHistory">How many years have you been driving?</label>
+                            <select id="drivingHistory" class="form-control" required>
+                                <option value="" disabled selected>Years of Experience</option>
+                                <option value="0-1">0-1 years</option>
+                                <option value="2-5">2-5 years</option>
+                                <option value="5+">5+ years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="addRiders">Any Additional Coverage Riders?</label>
+                            <select id="addRiders" class="form-control">
+                                <option value="" disabled selected>Choose any additional coverage</option>
+                                <option value="Roadside Assistance">Roadside Assistance</option>
+                                <option value="Rental Reimbursement">Rental Reimbursement</option>
+                                <option value="Gap Insurance">Gap Insurance</option>
+                            </select>
+                        </div>
+
+                        <!-- Address Information -->
+                        <h4 class="mt-4">Address Information</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Street Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="City" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="State/Province" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Postal Code" required>
+                        </div>
+                        <div class="form-group">
+                         
+                             <input
+                      type="checkbox"
+                      id="leadid_tcpa_disclosure"
+                      name="tcpa_consent"
+                      style="width:auto"
+                      required
+                    />
+                            <label>By clicking Submit, I agree to the <a href="./terms.html">Terms and Conditions</a> and <a href="./privacy.html">Privacy Policy</a> and authorize insurance companies, their agents and marketing partners to Contact me. By selecting the above check box "you agree by your electronic signature that you give express written consent to receive marketing communications regarding insurance products and services through the use by automatic dialing system , pre-recorded calls and artificial voice messages , telephone calls, emails and text messages to the number and email address I provided above.. I agree to receive telemarketing calls and pre-recorded messages via an automatic dialing system , even if my telephone number is a mobile number that is currently listed on any state, federal or corporate “Do Not Call” list. I understand that my consent is not a condition of purchase of any goods or services and that I may revoke my consent at any time. I understand that standard message and data rates may apply. California Consumer Privacy Act</label>
+                            
+                        </div>
+
+                        <!-- Preferred Contact Method -->
+                        
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Get My Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Social Media Links -->
+<section class="text-center">
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</section>
+   <script>
+        const scriptURL = "";
+        const form = document.forms["google-sheet"];
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) =>
+              alert("Thanks for Contacting us..! We Will Contact You Soon...")
+            )
+            .catch((error) => console.error("Error!", error.message));
+        });
+
+        function other() {
+          const d = new Date();
+
+          document.getElementById("screen").value =
+            screen.width + "x" + screen.height;
+          document.getElementById("date").value =
+            d.getDate() +
+            "-" +
+            parseInt(d.getMonth() + 1) +
+            "-" +
+            d.getFullYear();
+          document.getElementById("time").value =
+            d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+          let userAgent = navigator.userAgent;
+          let browserName;
+
+          if (userAgent.match(/chrome|chromium|crios/i)) {
+            browserName = "chrome";
+          } else if (userAgent.match(/firefox|fxios/i)) {
+            browserName = "firefox";
+          } else if (userAgent.match(/safari/i)) {
+            browserName = "safari";
+          } else if (userAgent.match(/opr\//i)) {
+            browserName = "opera";
+          } else if (userAgent.match(/edg/i)) {
+            browserName = "edge";
+          } else {
+            browserName = "No browser detection";
+          }
+
+          document.getElementById("browser").value = browserName;
+          document.getElementById("source").value = window.location.href;
+        }
+        other();
+      </script>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 PerfectAutoCover Company. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="./terms.html">Terms of Service</a></p>
+</footer>
+
+<!-- Bootstrap 4 and FontAwesome JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
